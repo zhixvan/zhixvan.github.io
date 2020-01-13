@@ -501,6 +501,32 @@
         	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div>
     </div>
+    <span id="busuanzi_container_site_pv"> 
+  <br>��վ�ÿ���<span id="busuanzi_value_site_pv"></span>�˴�
+</span>
+		<span id="busuanzi_container_site_uv"> 
+  ��վ�ܷÿ���<span id="busuanzi_value_site_uv"></span>��<br>
+</span>
+		
+<!-- ��վ����ʱ������� -->
+<span id="timeDate">��������...</span>
+<span id="times">����ʱ����...</span>  Sometimes your whole life boils down to one insame move.
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/05/2019 13:00:00");//�˴��޸���Ľ�վʱ�������վ����ʱ��
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "��վ������ "+dnum+" �� ";
+        document.getElementById("times").innerHTML = hnum + " Сʱ " + mnum + " �� " + snum + " ��";
+    }
+setInterval("createtime()",250);
+</script>
 </footer>
   <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script>

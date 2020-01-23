@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://yoursite.com/2020/01/12/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-01-13</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2020/01/13/%E5%BE%AE%E8%BD%AF%E5%B7%B2%E5%AF%B9Windows7%E5%81%9C%E6%AD%A2%E6%94%AF%E6%8C%81/</loc>
-    <lastmod>2020-01-13</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2020/01/12/hello-world/</loc>
-    <lastmod>2020-01-12</lastmod>
-  </url>
+
 </urlset>
